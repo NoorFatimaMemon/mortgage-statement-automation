@@ -1,0 +1,12 @@
+Setup Process: Use the provided setup.bat file to automatically install Python and all necessary dependencies for the project.
+
+Running the Automation: Execute the main_shellpoint.bat file to automatically run the entire automation process.
+
+Workflow Overview
+1. Initializing Automation: The automation script initializes by setting up browser instances and handling authentication for Shellpoint Mortgage and Phone.com.
+
+2. Performing Login and Data Extraction: The script logs into the Shellpoint using provided credentials and locate the most recent statement for account 0680990504 to download its Monthly Statment
+
+3. Renaming and Managing Files: The downloaded file is processed, renamed appropriately (as StatementDate - LenderName - AccountNumber.pdf), and organized within the designated folder structure.
+
+4. Uploading Files to Google Drive: After processing, the downloaded file is uploaded securely to Google Drive using a service account for cloud storage.
